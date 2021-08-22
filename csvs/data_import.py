@@ -37,7 +37,7 @@ def upload_csv_sql(dic,conn):
         df.to_sql(file, con=conn, index=False)
 
 if __name__ == '__main__':
-    dic = {'trips2': 'csvs/trips.csv'}
+    dic = {'trips': 'csvs/trips.csv'}
     conn = get_conn()
     upload_csv_sql(dic,conn)
 
